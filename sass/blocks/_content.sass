@@ -1,0 +1,304 @@
+.content
+    margin-top: 60px
+    &-published
+        height: 34px
+        border-radius: 3px
+        background-color: #f1f1f2
+        grid-column: 1/3
+        display: flex
+        justify-content: space-between
+        padding: 10px 25px
+        .promo__text
+            color: #918fb3
+            font-size: 14px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 14px
+            text-shadow: none
+            &:nth-child(2)
+                font-weight: 900
+
+    &-check
+        &__title
+            font-size: 16px
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            margin-bottom: 11px
+        &__list
+            flex-direction: column
+        &__item
+            margin-left: 18px
+            max-width: 95%
+            padding-left: 35px
+            display: flex
+            align-items: center
+            height: 52px
+            border-radius: 0 26px 26px 0
+            border: 1px solid #c9c8f0
+            margin-bottom: 3px
+            position: relative
+            &:before
+                content: url("../img/content/arrow.png")
+                position: absolute
+                left: -25px
+                top: -2px
+
+    &-num
+        &__item
+            height: 52px
+            border-radius: 0 26px 26px 0
+            background-image: linear-gradient(to right, #fffcde 0%, #ffe8b2 100%)
+            margin-bottom: 5px
+        &__title
+            text-transform: uppercase
+        &__order
+            position: absolute
+            left: -0.4%
+            top: 55%
+            transform: translateY(-50%)
+            color: #ffffff
+            font-size: 32px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: center
+        &__item
+            &::before
+                content: url("../img/content/item.png")
+
+    &-table
+        grid-column: 1/3
+        margin-top: 15px
+        caption
+            font-size: 16px
+            font-style: italic
+            letter-spacing: normal
+            line-height: normal
+            text-align: center
+            margin-top: 29px
+            padding: 0
+            margin-bottom: 15px
+
+        &__th
+            border-radius: 7px
+            background-color: #d9d7ff
+            border: solid 2px white
+            font-size: 18px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: center
+            text-transform: uppercase
+            line-height: normal
+            padding: 3px
+        &__td
+            border: solid 2px white
+            padding: 16px 21px
+            color: #333333
+
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            img
+                display: block
+                margin: 0 auto
+        &__row
+            &:nth-child(2n)
+                border-radius: 7px
+                background-color: #f9f9fa
+            &:nth-of-type(2n+1)
+                border-radius: 7px
+                background-color: #f1f1f2
+
+    &-note
+        grid-column: 1/3
+        border-radius: 7px
+        background-color: #fff3c8
+        padding: 30px 275px 26px 41px
+        position: relative
+        margin-bottom: 10px
+        &::before
+            content: url("../img/content/note.png")
+            position: absolute
+            top: -15px
+            right: 0
+        &::after
+            content: url("../img/content/quotes.png")
+            position: absolute
+            top: 8px
+            right: 11px
+        &__text
+            color: #000000
+            font-size: 22px
+            font-weight: 300
+            font-style: normal
+            letter-spacing: normal
+            line-height: 34px
+            text-align: left
+            width: 512px
+        &__img
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -5%
+
+    &__title
+        margin-bottom: 40px
+    &__list
+        flex-direction: column
+    &__item
+        display: grid
+        position: relative
+        grid-template-columns: 40px auto
+        gap: 11px
+        &::before
+            content: ""
+            width: 100%
+            height: 2px
+            box-shadow: 0 -7px 20px rgba(21, 22, 76, 0.5)
+            background-color: #f2f0ff
+            position: absolute
+
+    &__numb
+        width: 40px
+        height: 40px
+        background-color: #bebceb
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #ffffff
+        font-size: 22px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        text-align: center
+        line-height: normal
+        margin-top: 2px
+    &__link
+        color: #333333
+        font-size: 22px
+        font-weight: 300
+        font-style: normal
+        letter-spacing: normal
+        text-align: left
+        margin: 4px 0 10px 0
+    &-article
+        display: grid
+        grid-template: repeat(auto-fit, minmax(200px, auto))/452px 368px
+        gap: 35px
+        margin-top: 60px
+        color: #333333
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 24px
+        text-align: left
+        &__attention
+            padding: 29px 41px 28px 88px
+            position: relative
+
+            height: 100px
+            border-radius: 41px
+            background: url(../img/content/bg.png) center center/cover no-repeat
+            margin-left: 23px
+            color: #ffffff
+            font-size: 18px
+            font-weight: 300
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: left
+            margin-bottom: 10px
+            grid-column: 1/3
+            span
+                font-weight: 400
+                text-transform: uppercase
+            &::before
+                content: url("../img/content/logo.png")
+                position: absolute
+                bottom: -18px
+                left: -35px
+                z-index: -1
+
+        &__img
+            img
+                width: 100%
+        &__introduction
+            .text_fs36
+                font-weight: 900
+                font-style: normal
+                letter-spacing: normal
+                line-height: 42px
+                text-align: center
+        &__main
+            color: #333333
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 24px
+            grid-column: 1/3
+            padding: 0 20px
+
+            .text_fs36
+                font-weight: 300
+                line-height: 42px
+                text-align: center
+                margin-left: 18px
+            .text_fs22
+                margin-bottom: 5px
+    &-main
+        &__list
+            flex-direction: column
+            margin-top: 20px
+            width: 317px
+        &__item
+            position: relative
+            padding-left: 31px
+            margin-bottom: 15px
+
+            &::before
+                content: ""
+                position: absolute
+                background-image: linear-gradient(45deg, #ee5924 0%, #e85829 20%, #9d4c6b 80%, #954b72 100%)
+                border-radius: 100%
+                width: 10px
+                height: 10px
+                top: 7px
+                left: 6px
+    &-tags
+        display: flex
+        margin-top: 15px
+        align-items: center
+        &__title
+            color: #333333
+            font-size: 14px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-transform: uppercase
+            margin-right: 4px
+        &__item
+            margin: 0 3px
+            a
+                width: 77px
+                padding: 8px 15px
+                height: 29px
+                border-radius: 15px
+                border: 1px solid #dedcf0
+                color: #0c0f88
+                font-size: 14px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal

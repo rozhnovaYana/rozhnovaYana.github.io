@@ -1,0 +1,125 @@
+.comment
+    height: 1572px
+    background-color: #e8e8f5
+    padding-top: 75px
+    width: 100%
+    &-stars
+        display: flex
+    &-leave
+        width: 749px
+        height: 498px
+        border-radius: 20px
+        background-color: #ffffff
+        margin: 0 auto
+        padding: 50px 98px
+        &__title
+            margin-left: 12px
+            color: #333333
+            font-size: 22px
+            font-weight: 300
+            font-style: normal
+            letter-spacing: normal
+            line-height: 33px
+            text-align: left
+            margin-bottom: 34px
+    &-roll
+        margin-top: 35px
+        height: 93px
+        background-color: #202139
+        opacity: 0.56
+        background: url(../img/comment/roll.png)
+        position: relative
+        img
+            width: 100%
+        &__title
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+
+            &::after
+                content: url("../img/comment/rolling.png")
+                position: absolute
+            a
+                text-align: center
+                color: #0c0f88
+                font-size: 14px
+                font-weight: 900
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+                text-align: right
+                text-transform: uppercase
+                margin-right: 10px
+                &:hover
+                    text-decoration: none
+                    font-size: 16px
+
+    &-form
+        textarea
+            width: 553px
+            height: 130px
+            border-radius: 3px
+            background-color: #ffffff
+            margin-bottom: 24px
+            resize: none
+            z-index: 2
+            padding: 10px
+        &__btn,button
+            margin-left: 0
+        &__textarea
+            z-index: 2
+            position: relative
+            &:before
+                content: ""
+                width: 557px
+                height: 134px
+                background-image: linear-gradient(to right, #ee5924 0%, #e85829 20%, #9d4c6b 69%, #1635ec 100%)
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                z-index: -1
+                top: -2px
+                left: -2px
+
+    &__leave
+        width: 178px
+        height: 44px
+        border-radius: 15px
+        background-image: linear-gradient(45deg, #ee5924 0%, #e85829 20%, #9d4c6b 80%, #954b72 100%)
+        position: relative
+        margin-top: 20px
+    &-header
+        display: flex
+        align-items: center
+        justify-content: center
+    &__read, &__link
+        color: #918fb3
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        text-align: left
+        text-transform: uppercase
+        letter-spacing: 0.84px
+    &__read
+        height: 47px
+        margin-right: 395px
+        position: relative
+        padding-left: 66px
+        &::before
+            content: url("../img/comment/read.png")
+            position: absolute
+            left: 15px
+            top: -11px
+            width: 40px
+            height: 40px
+            background-color: #bebceb
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+        a
+            font-weight: 900

@@ -1,0 +1,367 @@
+@media  (max-width:  1230px)
+    .container
+        max-width: 960px
+    .article
+        &__block
+            margin-left: 15px
+    .content-article
+        grid-template: repeat(auto-fit, minmax(200px, auto))/repeat(auto-fit, minmax(auto, 453px))
+    .header-contacts__tel
+        a
+            font-size: 22px
+    .header-menu
+        width: 500px
+    .content-article
+        grid-template: repeat(auto-fit, minmax(200px, auto))/repeat(auto-fit, minmax(453px, 1fr))
+    .content-article__img
+        grid-row: 2/3
+        width: 300px
+        margin: 0 auto
+        img
+            width: 100%
+    .content-article__attention
+        padding: 3% 10% 3% 15%
+    .content-article__attention
+        width: 90%
+    .content-note
+        width: 90%
+    .content-note__text
+        width: inherit
+        font-size: 16px
+        line-height: 24px
+    .request
+        width: 400px
+        position: relative
+        padding: 40px 40px 40px 60px
+        border-radius: 2%
+        box-shadow:
+        max-height: 400px
+        margin: 60px auto
+        margin-bottom: 0
+        background: #fffdf6
+        box-shadow: 0 2px 5px grey
+        a
+            color: black
+    .request__bg
+        display: none
+    .request__wrapper
+        display: none
+    .request-form__title
+        font-size: 20px
+    .request__text
+        display: none
+    .request-data
+        color: black
+        bottom: -20px
+        left: 30px
+    .comment__read, .comment__link
+        font-size: 12px
+
+    .request-data span
+        font-size: 12px
+    .projects__list
+        grid-template: repeat(auto-fit, minmax(389px, auto))/repeat(auto-fit, minmax(263px, 0.5fr))
+        row-gap: 50px
+    .comment__read
+        margin-right: 50px
+    .promo
+        padding-top: 150px
+        height: 500px
+        padding-left: 30px
+
+@media  (max-width:  992px)
+    .container
+        max-width: 720px
+    .content-article__attention
+        font-size: 14px
+        padding: 5% 10% 3% 15%
+
+    .header-nav__emblem
+        width: 150px
+        img
+            width: 100%
+    .header-nav
+        padding: 25px 0
+    .header-menu
+        width: 450px
+        padding-left: 20px
+        &::before
+            left: -10px
+    .header-calculator__title
+        display: none
+    .header-calculator
+        width: 50px
+        padding: 14px
+    .header-soc__item
+        width: 35px
+        height: 35px
+        img
+            width: 100%
+    .header-soc
+        display: grid
+        grid-template: repeat(2,30px)/repeat(2,30px)
+        gap: 15px
+        width: 70px
+    .header-contacts__tel
+        a
+            font-size: 16px
+    .article-header__item a
+        font-size: 13px
+    .article-header__item
+        padding: 0 8px
+        text-align: center
+    .article-header__title
+        display: none
+    .article-header__item::after
+        content: ""
+    .article-header
+        margin-top: 15px
+        display: none
+    .content__link
+        font-size: 15px
+    .content__numb
+        width: 30px
+        height: 30px
+        font-size: 14px
+    .content__item
+        grid-template-columns: 30px auto
+    .content-article
+        gap: 10px
+    .article__block
+        margin-left: 10px
+    .content-note__img
+        display: none
+    .content-note
+        padding: 30px 10px 10px 10px
+        display: flex
+        justify-content: center
+        align-items: center
+    .content-table__th
+        font-size: 16px
+    .content-tags
+        display: none
+    .comment-leave
+        max-width: 600px
+    .comment-form textarea
+        max-width: 400px
+    .comment-form__textarea:before
+        max-width: 405px
+    &__blocks
+        display: grid
+        grid-template-columns: 263px minmax(auto, 533px )
+
+@media  (max-width:  768px)
+    .container
+        max-width: 540px
+    .comment-roll img
+        display: none
+    .header-menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 100vw
+        height: 100vh
+        z-index: 2
+        transition: 0.5s all
+        &_active
+            left: 0
+        &__list
+            display: grid
+            grid-template: repeat(4, 100px)/400px
+            top: 50%
+            transform: translateY(-50%)
+            position: absolute
+
+        &__wrapper
+            position: absolute
+            top: 0
+            left: 0
+            width: 60vw
+            height: 100vh
+            background: rgba(190, 110, 104, 0.8)
+            padding: 20%
+        &__item
+            a
+                color: white
+    .header-graph
+        display: none
+    .header-contacts__tel
+        a
+            font-size: 22px
+    .header-soc
+        display: grid
+        grid-template: repeat(2,30px)/repeat(2,30px)
+        gap: 10px
+        width: 80px
+    .promo__title
+        font-size: 38px
+    .article__blocks
+        display: grid
+        grid-template-columns: 1fr
+        justify-content: center
+    .article__block
+        grid-row: 1/2
+    .content__title
+        margin-bottom: 20px
+    .content
+        margin-top: 40px
+    .sidebar
+        margin: 0 auto
+    .content__link
+        font-size: 13px
+    .content__item
+        gap: 5px
+    .content-article
+        grid-template: repeat(auto-fit, minmax(200px, auto))/repeat(auto-fit, minmax(300px, 1fr))
+    .projects__list
+        column-gap: 5px
+    .comment-leave
+        padding: 50px
+        max-width: 400px
+    .comment-form textarea
+        max-width: 300px
+    .comment-form__textarea:before
+        max-width: 305px
+    .comment__read
+        margin-right: 5px
+    .projects__title
+        font-size: 40px
+    .sidebar-review__read a
+        font-size: 14px
+        display: flex
+        justify-content: center
+        align-items: center
+    .comment-leave__title
+        font-size: 15px
+    .humburger
+        visibility: visible
+    .request
+        margin: 30px auto
+        padding: 20px
+        .request-form__input::after, .request-form button
+            width: 200px
+        .request-form button
+            margin-top: 30px
+            margin-bottom: 20px
+            margin-left: 0
+        .request-data
+            bottom: -30px
+    .promo__block
+        top: 80%
+    .promo
+        height: 400px
+        padding-top: 100px
+@media  (max-width:  577px)
+    .container
+        width: auto
+    .request-form button
+        width: 150px
+    .projects-item img
+        width: 100%
+    .content-table__td
+        font-size: 12px
+    .content-article__main
+        padding: 0
+    .article__block
+        margin-left: 0
+
+    .header-menu
+        &__wrapper
+            height: 100vh
+
+    .content-article__introduction
+        padding-left: 10px
+        padding-right: 10px
+
+    .comment-leave
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-width: 250px
+        padding-top: 5px
+    .comment-form textarea
+        max-width: 150px
+    .comment-form__textarea:before
+        max-width: 155px
+    .projects-item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 0 20px
+    .projects__title
+        margin-left: 5%
+    .comment__read
+        display: none
+    .comment__leave
+        width: 140px
+        height: 44px
+        margin-left: 10px
+    .comment-stars
+        margin-bottom: 10px
+    .request-form__input::after
+        width: 150px
+    .comment-leave__title
+        display: none
+
+    .header-switch
+        left: 38px
+    .content-article
+        row-gap: 5px
+        column-gap: 0
+        text-align: justify
+    .header-nav
+        padding: 30px 10px 20px 10px
+    .header-contacts__tel a
+        font-size: 14px
+    .header-feedback__title
+        display: none
+    .header-feedback:before
+        display: none
+    .header-feedback:after
+        display: none
+    .header-soc
+        margin-left: 25px
+    .promo
+        height: 100vh
+        padding-left: 10px
+    .promo__title
+        line-height: 1.4
+
+    .content-note
+        margin: 25px auto
+    .content-check__item
+        font-size: 12px
+        padding-right: 10px
+        line-height: 1
+    .content-published
+        height: 54px
+    .request__bg
+        display: none
+    .request__wrapper
+        display: none
+    .request__text
+        display: none
+    .request
+        width: 300px
+        padding-top: 20px
+    .request-form input
+        width: 200px
+    .request-form__input::after
+        width: 150px
+
+    .request-data
+        color: black
+        bottom: 5px
+        left: 30px
+    .projects__list
+        grid-template: repeat(auto-fit, minmax(389px, auto))/repeat(auto-fit, minmax(263px, 1fr))
+        padding-left: 10px
+    .projects__img_left, .projects__img
+        display: none
+
+    .content-article__attention
+        margin: 30px auto
+    .content-note
+        padding-top: 40px
+    .content-article__attention
+        font-size: 13px

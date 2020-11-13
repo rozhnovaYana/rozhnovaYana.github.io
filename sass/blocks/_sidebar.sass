@@ -1,0 +1,235 @@
+.sidebar
+    width: 263px
+    &__btns
+        display: grid
+        grid-template: repeat(auto-fit, minmax(44px, auto))/263px
+        gap: 2px
+    &-nav
+        margin-top: 45px
+        &__title
+            color: #0c0f88
+            font-size: 30px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: 33px
+            text-align: center
+            margin-bottom: 25px
+
+        &__btn
+            border-radius: 15px
+            background-image: linear-gradient(-7deg, #4c2977 0%, #0c0f88 100%)
+            display: flex
+            align-items: center
+            position: relative
+            min-height: 44px
+            padding: 0 20px
+            &:hover
+                text-decoration: none
+                color: #fffdf6
+                filter: contrast(150%)
+            a
+                color: #fffdf6
+                font-size: 16px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+                text-align: left
+                width: 100%
+                height: 100%
+                &:hover
+                    text-decoration: none
+                    color: #fffdf6
+                span
+                    margin-left: 8px
+                    color: #ee5924
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+                    line-height: normal
+            &:nth-child(1)
+                &::before
+                    content: url("../img/sidebar/logo.png")
+                    position: absolute
+                    top: -75%
+
+    &-similar
+        &__title
+            color: #333333
+            font-size: 22px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: 33px
+            text-align: center
+            text-transform: uppercase
+            margin: 36px 0 15px 0
+
+    &-card
+        width: 263px
+        background: url(../img/sidebar/similar1.png)
+        height: 175px
+        padding: 45px 43px 11px 17px
+        margin-bottom: 3px
+        position: relative
+        &::before
+            content: url("../img/sidebar/white_logo.png")
+            position: absolute
+            bottom: -6px
+            left: 3px
+        &:nth-child(2)
+            background: url(../img/sidebar/similar2.png)
+        &:nth-child(3)
+            background: url(../img/sidebar/similar3.png)
+
+        &__title
+            color: #ffffffc5
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: left
+            margin-bottom: 23px
+        &__more
+            color: #bebceb
+            font-size: 11px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: center
+            text-transform: uppercase
+            display: block
+            margin: 0 auto
+            position: absolute
+            bottom: 15px
+            left: 50%
+            transform: translateX(-50%)
+            width: 163px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                border-radius: 20px
+                text-decoration: none
+                background-color: #bebceb
+
+            &::before
+                content: url("../img/sidebar/arrow.png")
+                position: absolute
+                left: 10px
+                top: 10px
+
+    &-new
+        &__card
+            width: 263px
+            padding: 15px 20px 25px 20px
+            height: 249px
+            border-radius: 2px
+            background-color: #e8e8f5
+            margin-bottom: 1px
+            position: relative
+        &__text
+            color: #333333
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: left
+            margin-top: 12px
+        &__more
+            color: #0c0f88
+            font-size: 11px
+            font-weight: 700
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            text-align: left
+            text-transform: uppercase
+            font-style: normal
+            letter-spacing: 0.66px
+            line-height: normal
+            left: 82px
+            bottom: 10px
+    &-mark
+        display: flex
+        margin-bottom: 27px
+        &__stars
+            display: grid
+            margin: 5px 0 0 10px
+            color: #ff7b4c
+            font-size: 20px
+            gap: 15px
+            grid-template-columns: repeat(5, 12px)
+            font-weight: 500
+            line-height: 1.1
+
+        &__count
+            color: #ff7b4c
+            font-size: 25px
+            font-weight: 500
+    &-review
+        margin-top: 35px
+        width: 263px
+        height: 393px
+        border-radius: 2px
+        background-color: #11138a
+        padding: 42px 37px 30px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        text-align: left
+        position: relative
+        &__title
+            color: #ffffff
+            letter-spacing: normal
+            text-align: left
+            font-size: 22px
+            font-weight: 900
+            font-style: normal
+            letter-spacing: normal
+            line-height: 33px
+            text-transform: uppercase
+        &__text
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 24px
+            span
+                font-weight: 900
+        &__img
+            position: absolute
+            right: 0px
+            bottom: 0px
+            z-index: 1
+        &__read
+            width: 162px
+            height: 44px
+            border-radius: 15px
+            background-image: linear-gradient(45deg, #ee5924 0%, #e85829 20%, #9d4c6b 80%, #954b72 100%)
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 32px
+            z-index: 2
+            cursor: pointer
+            &:hover
+                filter: contrast(150%)
+            a
+                color: #fffdf6
+                font-family: Roboto
+                font-size: 16px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+                &:hover
+                    text-decoration: none

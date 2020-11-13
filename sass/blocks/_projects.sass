@@ -1,0 +1,81 @@
+.projects
+    margin-top: 75px
+    position: relative
+    padding-bottom: 83px
+    width: 100%
+    &__img
+        position: absolute
+        right: 0
+        bottom: -100px
+        z-index: -1
+        &_left
+            position: absolute
+            left: 0
+            bottom: 83px
+            z-index: -1
+    &-more
+        color: #0c0f88
+        font-size: 14px
+        font-weight: 700
+
+        font-style: normal
+
+        letter-spacing: 0.84px
+
+        line-height: normal
+        bottom: -32px
+        left: 30%
+        width: 163px
+
+        height: 40px
+
+    &__title
+        color: #333333
+        font-size: 48px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        line-height: 54px
+        text-align: left
+        margin-bottom: 42px
+    &__list
+        display: grid
+        grid-template: repeat(auto-fit, minmax(389px, auto))/repeat(auto-fit, 263px)
+        gap: 25px
+    &-item
+        color: #333333
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        position: relative
+        display: grid
+        justify-content: center
+
+        &__title
+            font-size: 16px
+            font-weight: 900
+            text-transform: uppercase
+        &__location
+            color: #0c0f88
+            font-style: italic
+            position: relative
+            margin: 15px 0 15px 15px
+            &::before
+                content: url("../img/projects/local.png")
+                position: absolute
+                left: -15px
+
+        &__descr
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            margin-left: 20px
+            text-align: justify
+
+        img
+            display: block
+            margin: 22px auto
+            margin-top: 0

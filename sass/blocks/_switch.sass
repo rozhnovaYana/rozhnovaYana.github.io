@@ -1,0 +1,40 @@
+.switch
+    position: relative
+    display: inline-block
+    margin: 0 9px
+
+    width: 50px
+    height: 18px
+    border-radius: 9px
+    background-color: #bebceb
+.switch input
+    display: none
+.slider
+    position: absolute
+    border-radius: 9px
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #bebceb
+    transition: .4s
+    &:hover
+        filter: contrast(200%)
+    &:before
+        position: absolute
+        content: ""
+        left: 2px
+        bottom: 2px
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        background-color: #0c0f88
+        -webkit-transition: .4s
+        transition: .4s
+input:checked+ .slider
+    background-color: #2196F3
+input:checked+ .slider:before
+    -webkit-transform: translateX(10px)
+    -ms-transform: translateX(10px)
+    transform: translateX(10px)
