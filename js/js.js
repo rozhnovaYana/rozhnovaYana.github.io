@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //menu
     const humb = document.querySelector(".humburger"),
         menu = document.querySelector(".header-menu"),
-        menuItem = document.querySelectorAll(".header-menu__item");
+        menuItem = document.querySelectorAll(".header-menu__item"),
+        close = document.querySelector(".header-menu__cross");
     humb.addEventListener("click", () => {
         if (humb.classList.contains("humburger_active")) {
             
@@ -41,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
        
+    });
+    close.addEventListener("click", () => {
+         closeMenu();
     });
     menuItem.forEach(item => {
         item.addEventListener("click", () => {
